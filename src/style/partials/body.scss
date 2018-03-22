@@ -1,9 +1,19 @@
 body {
+  color: #231f20;
+
   background-color: white;
 }
 
 a {
   text-decoration: none;
+}
+
+button {
+  border: none;
+
+  background: none;
+
+  cursor: pointer;
 }
 
 .visually-hidden:not(:focus):not(:active),

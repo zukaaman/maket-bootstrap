@@ -1,0 +1,66 @@
+.header {
+
+}
+
+.header-top {
+  display: flex;
+  align-items: center;
+
+  p {
+    margin: 0;
+    padding: 0;
+
+    font-size: 18px;
+    color: #231f20;
+
+    text-transform: uppercase;
+  }
+
+  img {
+    width: 45px;
+    height: 45px;
+  }
+
+  button {
+    padding: 0;
+  }
+
+  select {
+    padding: 0 56px 0 20px;
+
+    font-size: 18px;
+
+    background-color: white;
+    background-image: url("../img/down-arrow.png");
+    background-repeat: no-repeat;
+    background-position: 100px center;
+    background-size: 28px 15px;
+
+    border: none;
+    border-left: 2px dotted #231f20;
+    border-right: 2px dotted #231f20;
+
+    appearance: none;
+  }
+}
+
+.header-bottom {
+
+  .header-bottom__logo {
+    img {
+      width: 204px;
+      height: 204px;
+    }
+  }
+
+  .header-bottom__description {
+
+    p {
+      margin: 0;
+      padding: 0;
+
+      font-size: 34px;
+      color: #1680c1;
+    }
+  }
+}
