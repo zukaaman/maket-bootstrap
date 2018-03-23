@@ -1,0 +1,381 @@
+.lab {
+}
+
+.lab__description {
+  margin: 0;
+  margin-bottom: 100px;
+}
+
+.lab__about {
+  position: relative;
+
+  background-color: $color-blue;
+
+  border-right: 30px solid white;
+
+  .lab__title {
+    padding: 20px 0;
+    margin: 0;
+
+    color: $font-color-white;
+    font-size: 28px;
+    text-transform: uppercase;
+
+    border-bottom: 1px solid $color-white;
+  }
+
+  .lab__features {
+    margin: 0;
+    padding: 20px 0;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+
+    list-style: none;
+    border-bottom: 1px solid $color-white;
+
+    p {
+      margin: 0;
+      padding: 0;
+
+      color: $font-color-white;
+      font-size: 18px;
+    }
+
+    .house {
+      display: flex;
+
+      &::before {
+        content: "";
+
+        display: block;
+        width: 52px;
+        height: 46px;
+        margin-right: 20px;
+
+        background-image: url("../img/house.png");
+        background-repeat: no-repeat;
+        background-position: 0 0;
+      }
+    }
+
+    .scope {
+      display: flex;
+
+      &::before {
+        content: "";
+
+        display: block;
+        width: 52px;
+        height: 46px;
+        margin-right: 20px;
+
+        background-image: url("../img/scope.png");
+        background-repeat: no-repeat;
+        background-position: 0 0;
+      }
+    }
+
+    .almaz {
+      display: flex;
+
+      &::before {
+        content: "";
+
+        display: block;
+        width: 52px;
+        height: 46px;
+        margin-right: 20px;
+
+        background-image: url("../img/almaz.png");
+        background-repeat: no-repeat;
+        background-position: 0 0;
+      }
+    }
+
+    .face {
+      display: flex;
+
+      &::before {
+        content: "";
+
+        display: block;
+        width: 52px;
+        height: 46px;
+
+        background-image: url("../img/face.png");
+        background-repeat: no-repeat;
+        background-position: 0 0;
+      }
+    }
+  }
+
+  .lab__text {
+    margin: 0;
+    padding: 0;
+
+    color: $font-color-white;
+    font-size: 18px;
+  }
+
+  a {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+
+    display: flex;
+    align-items: center;
+    padding: 10px;
+
+    font-size: 20px;
+    color: $font-color-white;
+    text-transform: uppercase;
+
+    border: 1px solid transparent;
+
+    &::after {
+      content: "";
+
+      display: block;
+      width: 11px;
+      height: 22px;
+      margin-left: 20px;
+
+      background-image: url("../img/right-arrow-white.png");
+      background-repeat: no-repeat;
+      background-position: 0 0;
+    }
+
+    &:hover {
+      text-decoration: none;
+
+      border: 1px solid $color-white;
+    }
+  }
+}
+
+.lab__img {
+  padding: 0;
+}
+
+.lab__researches-and-annotations {
+  margin-bottom: 50px;
+}
+
+.lab__researches {
+  h2 {
+    margin: 0;
+    padding: 0;
+
+    color: $font-color-black;
+    font-size: 28px;
+    text-transform: uppercase;
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+    padding-left: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    height: 100%;
+    flex-direction: column;
+
+    list-style: none;
+
+    a {
+      font-size: 16px;
+      color: $font-color-blue;
+
+      &:hover {
+        text-decoration: none;
+        color: $color-blue;
+      }
+    }
+  }
+}
+
+.lab__annotations {
+
+  h2 {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 30px;
+
+    color: $font-color-black;
+    font-size: 28px;
+    text-transform: uppercase;
+  }
+
+  p {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 10px;
+
+    color: $font-color-grey;
+    font-size: 16px;
+
+    &:last-child {
+      margin-bottom: 20px;
+    }
+  }
+
+  .all-publications {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    margin-top: 20px;
+
+    font-size: 20px;
+    color: $font-color-black;
+
+    &::after {
+      content: "";
+
+      display: block;
+      width: 11px;
+      height: 22px;
+      margin-left: 20px;
+
+      background-image: url("../img/right-arrow.png");
+      background-repeat: no-repeat;
+      background-position: 0 0;
+    }
+
+    &:hover {
+      color: $color-blue;
+
+      text-decoration: none;
+
+      &::after {
+        background-image: url("../img/right-arrow-hover.png");
+      }
+    }
+  }
+
+  .line {
+    height: 1px;
+    margin-bottom: 30px;
+
+    background-color: $color-grey;
+  }
+
+  .fano,
+  .ran {
+    display: flex;
+    align-items: center;
+
+    font-size: 18px;
+    color: $font-color-black;
+  }
+
+  .fano {
+    margin-bottom: 20px;
+
+    &::before {
+      content: "";
+
+      display: block;
+      width: 75px;
+      height: 74px;
+      margin-right: 20px;
+
+      background-image: url("../img/eagle.png");
+      background-repeat: no-repeat;
+      background-position: 0 0;
+    }
+  }
+
+  .ran {
+
+    &::before {
+      content: "";
+
+      display: block;
+      width: 75px;
+      height: 74px;
+      margin-right: 15px;
+
+      background-image: url("../img/ran.png");
+      background-repeat: no-repeat;
+      background-position: 0 0;
+    }
+  }
+}
+
+.lab__images {
+  margin-bottom: 40px;
+
+  .lab__images-item {
+
+    a {
+      display: block;
+      width: 544px;
+      height: 440px;
+
+      border-top: 7px solid $color-blue;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+
+    img{
+      width: 545px;
+      height: 320px;
+      object-fit: cover;
+    }
+
+    .wrapper {
+      height: 120px;
+      display: flex;
+      align-items: center;
+
+      background-color: $color-blue;
+    }
+
+    p {
+      margin: 0;
+      padding: 0 20px;
+
+      color: $font-color-white;
+      font-size: 16px;
+      text-transform: uppercase;
+    }
+  }
+}
+
+.lab__all-labs {
+  margin-bottom: 40px;
+
+  a {
+    display: flex;
+    align-items: center;
+
+    font-size: 20px;
+    color: $font-color-black;
+
+    &::after {
+      content: "";
+
+      display: block;
+      width: 11px;
+      height: 22px;
+      margin-left: 20px;
+
+      background-image: url("../img/right-arrow.png");
+      background-repeat: no-repeat;
+      background-position: 0 0;
+    }
+
+    &:hover {
+      color: $color-blue;
+
+      text-decoration: none;
+
+      &::after {
+        background-image: url("../img/right-arrow-hover.png");
+      }
+    }
+  }
+}

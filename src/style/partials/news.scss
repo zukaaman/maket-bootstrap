@@ -4,6 +4,7 @@
 
 .news__title {
   align-items: center;
+  margin-bottom: 30px;
 
   h2 {
     margin: 0;
@@ -11,6 +12,8 @@
 
     font-size: 28px;
     color: $font-color-black;
+
+    border-bottom: 1px solid white;
   }
 
   .new__title-all-news {
@@ -22,8 +25,6 @@
       padding: 13px 10px;
 
       font-size: 18px;
-
-      border: 1px solid transparent;
 
       &::after {
         content: "";
@@ -39,12 +40,76 @@
       }
 
       &:hover {
-        color: $font-color-blue;
-
-        border: 1px solid $font-color-blue;
+        color: $color-blue;
 
         text-decoration: none;
+
+        &::after {
+          background-image: url("../img/right-arrow-hover.png");
+        }
       }
+    }
+  }
+}
+
+.news__list {
+  margin-bottom: 40px;
+
+  p {
+    margin: 0;
+    padding: 0;
+  }
+
+  .news__item {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+
+    img {
+      margin-bottom: 20px;
+
+      object-fit: cover;
+    }
+
+    .news__item-date {
+      margin-bottom: 15px;
+
+      font-size: 13px;
+      color: $font-color-black;
+    }
+
+    a {
+      height: 60px;
+
+      &:hover {
+        text-decoration: none;
+        color: $color-blue;
+      }
+    }
+
+    .news__item-description {
+      margin-bottom: 20px;
+
+      font-size: 18px;
+      color: $font-color-blue;
+      text-transform: uppercase;
+
+      &:hover {
+        color: $color-blue;
+      }
+    }
+
+    .news__item-lab {
+      height: 50px;
+      margin-bottom: 20px;
+
+      font-size: 16px;
+      color: $font-color-grey;
+    }
+
+    .news__item-about {
+      font-size: 16px;
+      color: $font-color-black;
     }
   }
 }
