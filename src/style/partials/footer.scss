@@ -42,6 +42,8 @@
     img {
       width: 145px;
       height: 145px;
+
+      object-fit: contain;
     }
   }
 
@@ -72,6 +74,8 @@
       width: 145px;
       height: 38px;
       margin-bottom: 15px;
+
+      object-fit: contain;
     }
 
     ul {
@@ -85,6 +89,8 @@
       img {
         width: 42px;
         height: 42px;
+
+        object-fit: contain;
       }
     }
   }
