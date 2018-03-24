@@ -310,8 +310,6 @@
 
     a {
       display: block;
-      width: 544px;
-      height: 440px;
 
       border-top: 7px solid $color-blue;
 
@@ -321,7 +319,7 @@
     }
 
     img{
-      width: 545px;
+      width: 100%;
       height: 320px;
       object-fit: cover;
     }
