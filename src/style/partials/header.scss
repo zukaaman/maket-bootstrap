@@ -5,8 +5,12 @@
     padding-top: 20px;
   }
 
-  .container {
-    position: relative;
+  @include small-screen {
+    padding-top: 20px;
+  }
+
+  @include medium-screen {
+    padding-top: 40px;
   }
 }
 
@@ -47,11 +51,34 @@
     border-right: 2px dotted $font-color-black;
 
     appearance: none;
+
+    @include extra-small-screen {
+      width: 100%;
+    }
+
+    @include small-screen {
+      width: 100%;
+    }
   }
 
   .header-top__admin {
     display: flex;
-    justify-content: flex-end;
+
+    @include extra-small-screen {
+      padding-top: 10px;
+
+      .col-4 {
+        text-align: center;
+      }
+    }
+
+    @include small-screen {
+      padding-top: 10px;
+
+      .col-4 {
+        text-align: center;
+      }
+    }
 
     .eye {
       width: 45px;
@@ -177,6 +204,10 @@
       width: 100%;
     }
 
+    @include small-screen {
+      width: 100%;
+    }
+
     button {
       display: flex;
       align-items: center;
@@ -188,6 +219,11 @@
       font-size: 20px;
 
       @include extra-small-screen {
+        width: 100%;
+        justify-content: flex-end;
+      }
+
+      @include small-screen {
         width: 100%;
         justify-content: flex-end;
       }
@@ -324,6 +360,10 @@
         margin-bottom: 10px;
       }
 
+      @include small-screen {
+        margin-bottom: 10px;
+      }
+
       @include medium-screen {
         margin-bottom: 10px;
       }
@@ -366,6 +406,15 @@
   .container {
     display: flex;
     align-items: center;
+
+    @include extra-small-screen {
+      flex-direction: column;
+
+      input {
+        margin-bottom: 10px;
+        margin-right: 0;
+      }
+    }
   }
 
   input {
@@ -406,11 +455,11 @@
   transition: all 0.4s;
 
   @include extra-small-screen {
-    top: 90px;
+    top: 150px;
   }
 
   @include small-screen {
-    top: 90px;
+    top: 110px;
   }
 }
 
@@ -420,7 +469,7 @@
   right: 0;
   z-index: -10;
 
-  width: 434px;
+  // width: 434px;
   height: 376px;
   padding: 30px 20px;
 
@@ -547,10 +596,10 @@
   transition: all 0.4s;
 
   @include extra-small-screen {
-    top: 90px;
+    top: 150px;
   }
 
   @include small-screen {
-    top: 90px;
+    top: 110px;
   }
 }

@@ -17,7 +17,23 @@
 .top__slider-item {
   position: relative;
 
+  max-height: 950px;
+
+  // @include extra-small-screen {
+  //   height: 400px;
+  // }
+
+  // @include small-screen {
+  //   height: 400px;
+  // }
+
+  // @include medium-screen {
+  //   height: 600px;
+  // }
+
   img {
+    max-width: auto;
+
     width: 100%;
   }
 
@@ -39,6 +55,18 @@
 
       font-size: 60px;
       color: $font-color-white;
+
+      @include extra-small-screen {
+        font-size: 20px;
+      }
+
+      @include small-screen {
+        font-size: 30px;
+      }
+
+      @include medium-screen {
+        font-size: 40px;
+      }
     }
 
     a {
@@ -48,6 +76,23 @@
       color: $font-color-white;
 
       border: 2px solid $font-color-white;
+
+      @include extra-small-screen {
+        padding: 5px 15px;
+        font-size: 13px;
+      }
+
+      @include small-screen {
+        padding: 7px 25px;
+
+        font-size: 16px;
+      }
+
+      @include medium-screen {
+        padding: 10px 35px;
+
+        font-size: 20px;
+      }
 
       &:hover {
         text-decoration: none;
@@ -66,12 +111,27 @@
   height: 81px;
 
   background-image: url("../img/slider-arrow.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
 
   transform: rotate(180deg);
 
-  &:active,
-  &:focus {
-    outline: non;
+  @include extra-small-screen {
+    top: calc(100% / 2 - 20px);
+    left: 20px;
+
+    height: 40px;
+
+    background-size: contain;
+  }
+
+  @include small-screen {
+    top: calc(100% / 2 - 20px);
+    left: 20px;
+
+    height: 40px;
+
+    background-size: contain;
   }
 }
 
@@ -84,6 +144,26 @@
   height: 81px;
 
   background-image: url("../img/slider-arrow.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+
+  @include extra-small-screen {
+    top: calc(100% / 2 - 20px);
+    right: 20px;
+
+    height: 40px;
+
+    background-size: contain;
+  }
+
+  @include small-screen {
+    top: calc(100% / 2 - 20px);
+    right: 20px;
+
+    height: 40px;
+
+    background-size: contain;
+  }
 }
 
 .slick-dots {
@@ -98,6 +178,18 @@
   justify-content: center;
 
   list-style: none;
+
+  @include extra-small-screen {
+    bottom: 5%;
+  }
+
+  @include small-screen {
+    bottom: 5%;
+  }
+
+  @include medium-screen {
+    bottom: 5%;
+  }
 
   li {
     margin-right: 20px;
@@ -117,6 +209,27 @@
 
     text-indent: -9999px;
     overflow:hidden;
+
+    @include extra-small-screen {
+      width: 13px;
+      height: 13px;
+
+      background-size: contain;
+    }
+
+    @include small-screen {
+      width: 13px;
+      height: 13px;
+
+      background-size: contain;
+    }
+
+    @include medium-screen {
+      width: 13px;
+      height: 13px;
+
+      background-size: contain;
+    }
   }
 
   .slick-active button {
