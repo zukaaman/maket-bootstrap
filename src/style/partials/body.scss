@@ -12,6 +12,12 @@ a {
   text-decoration: none;
 
   color: inherit;
+
+  &:hover,
+  &:focus,
+  &:active {
+    outline: none;
+  }
 }
 
 button {
@@ -20,6 +26,12 @@ button {
   background: none;
 
   cursor: pointer;
+
+  &:hover,
+  &:focus,
+  &:active {
+    outline: none;
+  }
 }
 
 img {
