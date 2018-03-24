@@ -67,10 +67,26 @@
 
   border-right: 1px solid $color-grey;
 
+  @include extra-small-screen {
+    border-right: none;
+  }
+
+  @include small-screen {
+    border-right: none;
+  }
+
+  @include medium-screen {
+    border-right: none;
+  }
+
   .event__name {
     font-size: 20px;
     color: $font-color-blue;
     text-transform: uppercase;
+
+    @include small-screen {
+      font-size: 16px;
+    }
 
     &:hover {
       text-decoration: none;
@@ -132,6 +148,18 @@
 }
 
 .events__events-list {
+
+  @include extra-small-screen {
+    border-top: 1px solid $color-grey;
+  }
+
+  @include small-screen {
+    border-top: 1px solid $color-grey;
+  }
+
+  @include medium-screen {
+    border-top: 1px solid $color-grey;
+  }
 
   ul {
     margin: 0;

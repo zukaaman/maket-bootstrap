@@ -81,6 +81,18 @@
     a {
       height: 60px;
 
+      @include extra-small-screen {
+        height: auto;
+      }
+
+      @include small-screen {
+        height: auto;
+      }
+
+      @include medium-screen {
+        height: auto;
+      }
+
       &:hover {
         text-decoration: none;
         color: $color-blue;

@@ -4,6 +4,7 @@
 .lab__description {
   margin: 0;
   margin-bottom: 100px;
+
 }
 
 .lab__about {
@@ -12,6 +13,18 @@
   background-color: $color-blue;
 
   border-right: 30px solid white;
+
+  @include extra-small-screen {
+    border-right: none;
+  }
+
+  @include small-screen {
+    border-right: none;
+  }
+
+  @include medium-screen {
+    border-right: none;
+  }
 
   .lab__title {
     padding: 20px 0;
@@ -33,6 +46,14 @@
 
     list-style: none;
     border-bottom: 1px solid $color-white;
+
+    @include extra-small-screen {
+      display: none;
+    }
+
+    @include small-screen {
+      display: none;
+    }
 
     p {
       margin: 0;
@@ -118,44 +139,56 @@
     font-size: 18px;
   }
 
+  .wrapper {
+    text-align: right;
+  }
+
   a {
-    position: absolute;
-    bottom: 20px;
-    right: 20px;
-
-    display: flex;
-    align-items: center;
-    padding: 10px;
-
-    font-size: 20px;
-    color: $font-color-white;
-    text-transform: uppercase;
-
-    border: 1px solid transparent;
-
-    &::after {
-      content: "";
-
-      display: block;
-      width: 11px;
-      height: 22px;
-      margin-left: 20px;
-
-      background-image: url("../img/right-arrow-white.png");
-      background-repeat: no-repeat;
-      background-position: 0 0;
-    }
+    display: inline-block;
 
     &:hover {
       text-decoration: none;
+    }
 
-      border: 1px solid $color-white;
+    p {
+      display: flex;
+      align-items: center;
+      padding: 10px;
+
+      font-size: 20px;
+      color: $font-color-white;
+      text-transform: uppercase;
+
+      border: 1px solid transparent;
+
+      &::after {
+        content: "";
+
+        display: block;
+        width: 11px;
+        height: 22px;
+        margin-left: 20px;
+
+        background-image: url("../img/right-arrow-white.png");
+        background-repeat: no-repeat;
+        background-position: 0 0;
+      }
+
+      &:hover {
+        text-decoration: none;
+
+        border: 1px solid $color-white;
+      }
     }
   }
 }
 
 .lab__img {
   padding: 0;
+
+  img {
+    width: 100%;
+  }
 }
 
 .lab__researches-and-annotations {
@@ -196,6 +229,14 @@
 }
 
 .lab__annotations {
+
+  @include extra-small-screen {
+    display: none;
+  }
+
+  @include small-screen {
+    display: none;
+  }
 
   h2 {
     margin: 0;
@@ -310,6 +351,7 @@
 
     a {
       display: block;
+      margin-bottom: 30px;
 
       border-top: 7px solid $color-blue;
 
@@ -320,7 +362,6 @@
 
     img{
       width: 100%;
-      height: 320px;
       object-fit: cover;
     }
 
@@ -352,6 +393,14 @@
 
     font-size: 20px;
     color: $font-color-black;
+
+    @include extra-small-screen {
+      font-size: 14px;
+    }
+
+    @include small-screen {
+      font-size: 14px;
+    }
 
     &::after {
       content: "";

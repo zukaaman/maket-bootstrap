@@ -13,7 +13,7 @@
 
 @import "partials/header.scss";
 
-@import "partials/slider.scss";
+@import "partials/top.scss";
 
 @import "partials/news.scss";
 
@@ -22,3 +22,5 @@
 @import "partials/lab.scss";
 
 @import "partials/footer.scss";
+
+@import "../../node_modules/slick-carousel/slick/slick.scss";

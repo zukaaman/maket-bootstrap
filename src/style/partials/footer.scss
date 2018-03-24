@@ -16,6 +16,10 @@
     li {
       margin-bottom: 15px;
 
+      @include medium-screen {
+        margin-bottom: 0;
+      }
+
       &:last-child {
         margin-bottom: 0;
       }
