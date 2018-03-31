@@ -208,9 +208,9 @@
   ul {
     margin: 0;
     padding: 0;
-    padding-left: 10px;
+    margin-top: 30px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: flex-start;
     height: 100%;
     flex-direction: column;
 
@@ -223,6 +223,24 @@
       &:hover {
         text-decoration: none;
         color: $color-blue;
+      }
+    }
+
+    li {
+      padding: 10px 0;
+      padding-left: 10px;
+      margin-bottom: 5px;
+
+      background-color: #f7f7f7;
+
+      border: 1px solid transparent;
+
+      &:hover {
+        border: 1px solid $color-blue;
+      }
+
+      &:last-child {
+        margin-bottom: 0;
       }
     }
   }
@@ -308,6 +326,8 @@
 
     font-size: 18px;
     color: $font-color-black;
+
+    background-color: #f7f7f7;
   }
 
   .fano {
@@ -357,6 +377,10 @@
 
       &:hover {
         text-decoration: none;
+
+        border-top: 7px solid $font-color-blue;
+
+        transition: 0.3s;
       }
     }
 
@@ -371,6 +395,12 @@
       align-items: center;
 
       background-color: $color-blue;
+
+      &:hover {
+        background-color: $font-color-blue;
+
+        transition: 0.3s;
+      }
     }
 
     p {

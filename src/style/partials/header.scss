@@ -1,17 +1,5 @@
 .header {
-  padding-top: 100px;
-
-  @include extra-small-screen {
-    padding-top: 20px;
-  }
-
-  @include small-screen {
-    padding-top: 20px;
-  }
-
-  @include medium-screen {
-    padding-top: 40px;
-  }
+  padding-top: 10px;
 }
 
 .header-top {
@@ -62,6 +50,13 @@
 
     @include small-screen {
       width: 100%;
+    }
+  }
+
+  .col-sm-12:first-child {
+
+    .row {
+      background-color: #fbfbfb;
     }
   }
 

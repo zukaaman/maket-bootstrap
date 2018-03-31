@@ -1,10 +1,6 @@
 /*
 * Custom
 */
-@import "../../node_modules/normalize.css/normalize";
-
-@import "../../node_modules/bootstrap/scss/bootstrap.scss";
-
 @import "partials/var.scss";
 
 @import "partials/mixins.scss";
@@ -22,5 +18,3 @@
 @import "partials/lab.scss";
 
 @import "partials/footer.scss";
-
-@import "../../node_modules/slick-carousel/slick/slick.scss";
